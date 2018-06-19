@@ -14,6 +14,19 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <AndroidClassParser>class-parse</AndroidClassParser>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>Xamarin.MikePenz.FastAdapter</PackageId>
+    <PackageVersion>3.2.6</PackageVersion>
+    <Authors>Mike Penz</Authors>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseUrl>https://github.com/kibotu/Xamarin.MikePenz.FastAdapter/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>Mike Penz</Owners>
+    <PackageProjectUrl>https://github.com/kibotu/Xamarin.MikePenz.FastAdapter</PackageProjectUrl>
+    <PackageReleaseNotes>3.6.2</PackageReleaseNotes>
+    <Summary>The bullet proof, fast and easy to use adapter library, which minimizes developing time to a fraction...</Summary>
+    <PackageTags>xamarin android mike penz fastadapter material drawer materialdrawer</PackageTags>
+    <Title>Xamarin.MikePenz.FastAdapter</Title>
+    <Description>The bullet proof, fast and easy to use adapter library, which minimizes developing time to a fraction...</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,10 +66,11 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\fastadapter-3.2.6.aar" />
+    <Folder Include="Additions\" />
+    <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Additions\" />
+    <LibraryProjectZip Include="Jars\library-extensions-expandable-release-3.2.6.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />

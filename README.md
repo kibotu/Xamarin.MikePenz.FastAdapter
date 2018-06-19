@@ -1,4 +1,4 @@
-# Xamarin.MikePenz.FastAdapter.Extensions.Expandable [![NuGet Badge](https://buildstats.info/nuget/Xamarin.MikePenz.FastAdapter.Extensions.Expandable)](https://www.nuget.org/packages/Xamarin.MikePenz.FastAdapter.Extensions.Expandable/) 
+# Xamarin.MikePenz.FastAdapter [![NuGet Badge](https://buildstats.info/nuget/Xamarin.MikePenz.FastAdapter)](https://www.nuget.org/packages/Xamarin.MikePenz.FastAdapter/) 
 
 Port of https://github.com/mikepenz/FastAdapter to Xamarin.
 
@@ -10,13 +10,13 @@ Have a look at [README.md](https://github.com/mikepenz/FastAdapter/blob/develop/
 
 ### Android
 
-Add [Nuget](https://www.nuget.org/packages/Xamarin.MikePenz.FastAdapter.Extensions.Expandable)
+Add [Nuget](https://www.nuget.org/packages/Xamarin.MikePenz.FastAdapter)
 
-        PM> Install-Package Xamarin.MikePenz.FastAdapter.Extensions.Expandable -Version 1.0.5
+        PM> Install-Package Xamarin.MikePenz.FastAdapter -Version 3.2.6
 
 ## How to build
 
-    msbuild Xamarin.MikePenz.FastAdapter.Extensions.Expandable.sln /t:Xamarin.MikePenz.FastAdapter.Extensions.Expandable /p:Configuration="Release" /p:BuildProjectReferences=false
+    msbuild Xamarin.MikePenz.FastAdapter.sln /t:Xamarin.MikePenz.FastAdapter /p:Configuration="Release" /p:BuildProjectReferences=false
 
 ## How to publish nupkg
 
